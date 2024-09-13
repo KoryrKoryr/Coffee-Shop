@@ -12,8 +12,8 @@ def test_coffee_name_validation():
 
 def test_coffee_orders():
     coffee = Coffee("Latte")
-    customer1 = Customer("Alice")
-    customer2 = Customer("Bob")
+    customer1 = Customer("Denis")
+    customer2 = Customer("Kiki")
 
     order1 = customer1.create_order(coffee, 5.0)
     order2 = customer2.create_order(coffee, 6.0)
@@ -25,8 +25,8 @@ def test_coffee_orders():
 
 def test_coffee_customers():
     coffee = Coffee("Latte")
-    customer1 = Customer("Alice")
-    customer2 = Customer("Bob")
+    customer1 = Customer("Denis")
+    customer2 = Customer("Kiki")
 
     customer1.create_order(coffee, 5.0)
     customer2.create_order(coffee, 6.0)
@@ -38,8 +38,8 @@ def test_coffee_customers():
 
 def test_num_orders():
     coffee = Coffee("Espresso")
-    customer1 = Customer("Alice")
-    customer2 = Customer("Bob")
+    customer1 = Customer("Denis")
+    customer2 = Customer("Kiki")
 
     customer1.create_order(coffee, 5.0)
     customer2.create_order(coffee, 6.0)
@@ -48,8 +48,8 @@ def test_num_orders():
 
 def test_average_price():
     coffee = Coffee("Espresso")
-    customer1 = Customer("Alice")
-    customer2 = Customer("Bob")
+    customer1 = Customer("Denis")
+    customer2 = Customer("Kiki")
 
     customer1.create_order(coffee, 5.0)
     customer2.create_order(coffee, 7.0)

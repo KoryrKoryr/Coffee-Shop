@@ -4,7 +4,7 @@ from coffee import Coffee
 from order import Order
 
 def test_order_price_validation():
-    customer = Customer("Alice")
+    customer = Customer("Denis")
     coffee = Coffee("Latte")
 
     with pytest.raises(ValueError):
@@ -17,7 +17,7 @@ def test_order_price_validation():
     assert valid_order.price == 5.0
 
 def test_order_customer_and_coffee():
-    customer = Customer("Alice")
+    customer = Customer("Denis")
     coffee = Coffee("Latte")
     order = Order(customer, coffee, 5.0)
 
@@ -25,7 +25,7 @@ def test_order_customer_and_coffee():
     assert order.coffee == coffee
 
 def test_order_price_update():
-    customer = Customer("Bob")
+    customer = Customer("Kiki")
     coffee = Coffee("Espresso")
     order = Order(customer, coffee, 6.0)
 

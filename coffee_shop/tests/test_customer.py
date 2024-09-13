@@ -14,7 +14,7 @@ def test_customer_name_validation():
     assert valid_customer.name == "John"
 
 def test_customer_create_order():
-    customer = Customer("Alice")
+    customer = Customer("Denis")
     coffee = Coffee("Latte")
     order = customer.create_order(coffee, 5.0)
 
@@ -26,7 +26,7 @@ def test_customer_create_order():
     assert order in customer.orders()
 
 def test_customer_coffees():
-    customer = Customer("Bob")
+    customer = Customer("Kiki")
     coffee1 = Coffee("Latte")
     coffee2 = Coffee("Espresso")
 
@@ -40,12 +40,12 @@ def test_customer_coffees():
     assert len(coffees) == 2  # Ensure the unique list of coffees is returned
 
 def test_most_aficionado():
-    customer1 = Customer("Alice")
-    customer2 = Customer("Bob")
+    customer1 = Customer("Denis")
+    customer2 = Customer("Kiki")
     coffee = Coffee("Espresso")
 
-    customer1.create_order(coffee, 5.0)  # Alice spends 5.0
-    customer2.create_order(coffee, 6.0)  # Bob spends 6.0
-    customer1.create_order(coffee, 3.0)  # Alice spends 3.0 more (total 8.0)
+    customer1.create_order(coffee, 5.0)  # Denis spends 5.0
+    customer2.create_order(coffee, 6.0)  # Kiki spends 6.0
+    customer1.create_order(coffee, 3.0)  # Denis spends 3.0 more (total 8.0)
 
-    assert Customer.most_aficionado(coffee) == customer1  # Alice spent the most
+    assert Customer.most_aficionado(coffee) == customer1  # Denis spent the most
