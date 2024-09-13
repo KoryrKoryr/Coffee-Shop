@@ -21,9 +21,9 @@ def main():
 
     # Step 3: Create Orders
     print("\nCreating orders...")
-    order1 = korir.create_order(latte, 4.5)
-    order2 = busolo.create_order(espresso, 6.0)
-    order3 = korir.create_order(cappuccino, 5.5)
+    order1 = korir.create_order(latte, 8.5)
+    order2 = busolo.create_order(espresso, 10.0)
+    order3 = korir.create_order(cappuccino, 9.5)
     order4 = munene.create_order(latte, 3.5)
     order5 = busolo.create_order(latte, 4.0)
 
